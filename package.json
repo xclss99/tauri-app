@@ -8,14 +8,14 @@
   },
   "type": "module",
   "scripts": {
-    "start:dev": "vite --host --mode development",
-    "start:test": "vite --host --mode staging",
-    "start:prod": "vite --host --mode production",
+    "dev": "vite --host --mode development",
+    "test": "vite --host --mode staging",
+    "prod": "vite --host --mode production",
     "build:dev": "vue-tsc --noEmit && vite build --mode development",
     "build:test": "vue-tsc --noEmit && vite build --mode staging",
     "build:prod": "vue-tsc --noEmit && vite build --mode production",
     "preview": "vite preview",
-    "tauri:dev": "tauri dev --mode development",
+    "tauri:dev": "tauri dev",
     "tauri:build": "tauri build",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore"
   },

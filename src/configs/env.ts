@@ -1,6 +1,14 @@
-export const { VITE_NODE_ENV, VITE_BASE_URL, VITE_APP_TITLE, VITE_APP_DESC } = import.meta.env
+export const { VITE_NODE_ENV, VITE_BASE_URL, VITE_APP_TITLE, TAURI_PLATFORM, TAURI_DEBUG } =
+  import.meta.env
 
-console.log(VITE_NODE_ENV, VITE_BASE_URL, VITE_APP_TITLE, VITE_APP_DESC)
+const envInfo = [
+  { key: 'TAURI_PLATFORM', value: TAURI_PLATFORM },
+  { key: 'VITE_NODE_ENV', value: VITE_NODE_ENV },
+  { key: 'VITE_BASE_URL', value: VITE_BASE_URL },
+  { key: 'VITE_APP_TITLE', value: VITE_APP_TITLE }
+]
+console.table(envInfo)
+
 export const service: Http.Service = {
   env: VITE_NODE_ENV || 'development',
   baseURL: VITE_BASE_URL || 'http://localhost:3000'

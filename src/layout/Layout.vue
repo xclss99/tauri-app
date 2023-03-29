@@ -1,9 +1,9 @@
 <template>
-  <div>
-    <RouterView />
-  </div>
+  <Page />
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import Page from './Page.vue'
+</script>
 
 <style scoped></style>

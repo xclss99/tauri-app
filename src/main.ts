@@ -17,6 +17,8 @@ const setupApp = async () => {
   app.use(router)
 
   app.mount('#app')
+
+  console.log('tauri-vite-app running at port 1420')
 }
 
 setupApp()

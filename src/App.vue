@@ -1,6 +1,8 @@
 <template>
   <n-config-provider :theme="theme" :breakpoints="BREAK_POINTS">
-    <Layout />
+    <n-dialog-provider>
+      <Layout />
+    </n-dialog-provider>
   </n-config-provider>
 </template>
 

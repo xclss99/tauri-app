@@ -3,6 +3,9 @@
 interface ImportMetaEnv {
   readonly VITE_NODE_ENV: string
   readonly VITE_BASE_URL: string
+  readonly VITE_APP_TITLE: string
+  readonly TAURI_PLATFORM: string
+  readonly TAURI_DEBUG: string
 }
 
 interface ImportMeta {
